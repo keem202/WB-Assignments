@@ -1,6 +1,14 @@
 // Welcome message when page loads
 window.onload = function () {
-    alert("Welcome to my portfolio page!");
+
+    const welcome = document.getElementById("welcomeMessage");
+
+    welcome.style.display = "block";
+
+    setTimeout(() => {
+        welcome.style.opacity = "0";
+    }, 3000);
+
 };
 
 
