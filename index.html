@@ -3,68 +3,43 @@
 
 <head>
 <meta charset="UTF-8">
-<title>Ahmed Farag - CV</title>
+<title>Ahmed Farag - Portfolio</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
 <header>
-
 <img src="images/profile.png" class="profile-pic">
-
 <h1>Ahmed Farag</h1>
-<h2>Management of Information and Communication Technology Student</h2>
+<h2>MICT Student | AI & Web Developer</h2>
 
 <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
-
 </header>
 
+<nav>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
 
-<section>
-
-<h3>Profile</h3>
-
+<section id="about">
+<h3>About Me</h3>
 <p>
 Management of Information and Communication Technology student at The American
 University in Cairo with strong interests in software development, artificial
 intelligence, and web technologies. Experienced in computer vision systems,
 web development, and cloud-based applications.
 </p>
-
 </section>
 
-
-<section>
-
-<h3>Education</h3>
-
-<ul>
-
-<li>
-The American University in Cairo – Management of Information and
-Communication Technology (2022 – Present)
-</li>
-
-<li>
-Relevant Coursework: Fundamentals of Computing, Data Science,
-Information Security, Programming with R, Information Systems
-Analysis and Development
-</li>
-
-</ul>
-
-</section>
-
-
-<section>
-
+<section id="skills">
 <h3>Skills</h3>
 
 <button onclick="toggleSkills()">Show / Hide Skills</button>
 
 <ul id="skillsList">
-
 <li>Python</li>
 <li>C++</li>
 <li>C#</li>
@@ -73,116 +48,44 @@ Analysis and Development
 <li>CSS</li>
 <li>SQL</li>
 <li>R</li>
-
 </ul>
 
 </section>
 
+<section id="projects">
+<h3>Projects</h3>
+<p>Some of my latest GitHub projects:</p>
 
-<section>
+<div id="githubProjects">
+<p>Loading projects...</p>
+</div>
 
+</section>
+
+<section id="experience">
 <h3>Professional Experience</h3>
 
 <div class="project">
-
-<h4>Front-End Engineer – Real Performance Marketing (July 2025 – Present)</h4>
-
-<p>
-Developing and improving company websites using JavaScript, CSS, and React,
-while implementing UI/UX improvements and SEO optimization to improve
-engagement and site performance.
-</p>
-
+<h4>Front-End Engineer – Real Performance Marketing</h4>
+<p>Developing and improving company websites using JavaScript, CSS, and React.</p>
 </div>
 
-
 <div class="project">
-
-<h4>AI & Software Developer Intern – Eden AI (July 2025 – Aug 2025)</h4>
-
-<p>
-Led a 5-person team developing an AI-powered monitoring system using YOLOv8
-for conveyor belt tracking and an Azure OpenAI chatbot for machine status
-queries.
-</p>
-
+<h4>AI & Software Developer Intern – Eden AI</h4>
+<p>Built AI-powered monitoring system using YOLOv8 and chatbot integration.</p>
 </div>
 
-
 <div class="project">
-
-<h4>Student Technology Assistant – AUC (Sep 2024 – Jan 2025)</h4>
-
-<p>
-Developed and customized Moodle modules using PHP and collaborated with
-faculty to improve virtual classroom functionality.
-</p>
-
-</div>
-
-
-<div class="project">
-
-<h4>Back-End Developer Intern – El Araby Group (Jul 2024 – Aug 2024)</h4>
-
-<p>
-Worked on backend systems using Microsoft technologies including OOP
-principles, API development, and cloud deployment.
-</p>
-
+<h4>Student Technology Assistant – AUC</h4>
+<p>Developed Moodle modules and improved virtual classroom functionality.</p>
 </div>
 
 </section>
 
-
-<section>
-
-<h3>Projects</h3>
-
-<div class="project">
-
-<h4>Computer Vision Production Line Monitoring</h4>
-
-<p>
-YOLOv8-based system detecting and tracking products on a conveyor line
-with real-time logging and production monitoring.
-</p>
-
-</div>
-
-
-<div class="project">
-
-<h4>OpenAI Chatbot for Industrial Automation</h4>
-
-<p>
-Developed an Azure OpenAI chatbot using GPT-3.5 Turbo to answer machine
-status queries for smart factory monitoring.
-</p>
-
-</div>
-
-
-<div class="project">
-
-<h4>Online Shopping Application</h4>
-
-<p>
-Developed a .NET Core 8 e-commerce system with API architecture,
-JWT authentication, CI/CD deployment, and Azure SQL hosting.
-</p>
-
-</div>
-
-</section>
-
-
-<section>
-
+<section id="contact">
 <h3>Contact</h3>
 
 <form id="contactForm">
-
 <label>Name</label>
 <input type="text" id="name">
 
@@ -193,9 +96,7 @@ JWT authentication, CI/CD deployment, and Azure SQL hosting.
 <textarea id="message"></textarea>
 
 <button type="submit">Send Message</button>
-
 <p id="formMessage"></p>
-
 </form>
 
 <p>Email: faraga@aucegypt.edu</p>
@@ -216,18 +117,15 @@ github.com/keem202
 
 </section>
 
-
 <footer>
-
 <p>© 2026 Ahmed Farag</p>
-
 </footer>
 
+<div id="welcomeMessage">
+Welcome to my portfolio!
+</div>
 
 <script src="script.js"></script>
 
 </body>
-<div id="welcomeMessage">
-Welcome to my portfolio page!
-</div>
 </html>
